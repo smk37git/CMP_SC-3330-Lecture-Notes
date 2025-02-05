@@ -1,0 +1,14 @@
+package edu.mu.intro;
+
+public class Main {
+
+	public static void main(String[] args) {
+		Student jeremiah = new Student();
+		jeremiah.firstname = "Jeremiah";
+		jeremiah.lastname = "Ezekiel";
+		jeremiah.GPA = 1.8;
+		
+
+	}
+
+}

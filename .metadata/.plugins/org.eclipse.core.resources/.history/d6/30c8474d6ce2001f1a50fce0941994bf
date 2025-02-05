@@ -1,0 +1,49 @@
+package edu.mu.fitnessapp.user;
+
+public class FitnessUser {
+	
+	private String firstname;
+	private String lastname;
+	private int steps;
+	
+	// Getter and Setter methods
+	
+	// First Name
+	// Boolean Return = more control
+	public boolean setFirtName(String firstname) {
+		if(firstname.contains("fuk")) {
+			this.firstname = null;
+			return false;
+		}
+		this.firstname = firstname;
+		return true;
+	}
+	
+	/* Get/Set Firstname
+	public String getFirstname() {
+		return firstname;
+	}
+	public void setFirstname(String firstname) {
+		this.firstname = firstname;
+	}
+	*/
+	
+	// Last Name
+	public String getLastname() {
+		return lastname;
+	}
+	public void setLastname(String lastname) {
+		this.lastname = lastname;
+	}
+	
+	// Steps
+	public int getSteps() {
+		return steps;
+	}
+	public void setSteps(int steps) {
+		this.steps = steps;
+	}
+	
+	
+
+}

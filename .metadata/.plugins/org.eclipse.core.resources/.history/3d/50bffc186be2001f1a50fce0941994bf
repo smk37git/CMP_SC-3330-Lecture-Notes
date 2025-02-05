@@ -1,0 +1,10 @@
+package edu.mu.fitnessapp.user;
+
+public class FitnessUser {
+	
+	private String firstname;
+	private String lastname;
+	private int steps;
+	
+
+}

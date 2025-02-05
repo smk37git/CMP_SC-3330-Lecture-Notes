@@ -1,0 +1,15 @@
+package edu.mu.fitnessapp;
+
+import edu.mu.fitnessapp.user.FitnessUser;
+
+public class Main {
+
+	public static void main(String[] args) {
+		
+		FitnessUser user1 = new FitnessUser();
+		System.out.println("User #1: " + user1.firstname);
+		
+
+	}
+
+}
