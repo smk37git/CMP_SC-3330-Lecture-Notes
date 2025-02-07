@@ -13,12 +13,14 @@ public class Main {
 		PetOwner ownerWithName = new PetOwner("Ekincan", "Ufuktepe");
 		System.out.println("Name: " + ownerWithName.getFirstname());
 		
-		ownerWithName.adoptPet(new Pet("Peanut"));
-		
-		System.out.println("Ekin's pets:");
-		for(int i=0; i<ownerWithName.getNumOfPets(); i ++) {
-			System.out.println("Pet: " + ownerWithName.getPets()[i]);
+		for(int i=0; i<10; i++) {
+			ownerWithName.adoptPet(new Pet("Peanut"));
 		}
+		
+		ownerWithName.removePetAt(0);
+		ownerWithName.listAdoptedPets();
+		
+		System.out.println("Owner: " + owner.getFirstname() + " has " + owner.getNumOfPets() + "number of pets");
 
 	}
 

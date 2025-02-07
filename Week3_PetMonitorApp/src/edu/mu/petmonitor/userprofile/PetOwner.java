@@ -7,7 +7,7 @@ public class PetOwner {
 		private String firstname;
 		private String lastname;
 		private Pet[] pets;
-		private int numOfPets = 0;
+		private static int numOfPets = 0;
 		
 		public PetOwner() {
 			this.firstname = "NO_NAME";
@@ -51,10 +51,45 @@ public class PetOwner {
 		
 		public boolean adoptPet(Pet pet) {
 			if(numOfPets == getPets().length) {
+				System.out.println("Sorry you have reached your pet adoption limit");
 				return false;
 			}
-			pets[numOfPets]= pet;
+			for(int i=0; i<getPets().length; i++) {
+				if(pets[i] == null) {
+					pets[i] = pet;
+					System.out.println("Congrats " + firstname + "! You have adopted " + pet.getName());
+					break;
+				}
+			}
 			numOfPets ++;
+			return true;
+		}
+		
+		/**
+		 * This method will remove a Pet from the PetOwner object.
+		 * 
+		 * @param index
+		 * 			This arguement will hold the pet
+		 * @return
+		 * 			Return false if there is an invalid index or, a pet does not exist.
+		 * 			Returns true if the remove was successful.
+		 */
+		
+		public boolean removePetAt(int index) {
+			if(index < 0 || index > pets.length - 1) {
+				System.out.println("Invalid index!");
+				return false;
+			}
+			
+			if(pets[index] == null) {
+				System.out.println("There is no pet at " + index + " to remove");
+				return false;
+			}
+			
+			System.out.println("Removing successful for: " + pets[index]);
+			pets[index] = null;
+			numOfPets--;
+		
 			return true;
 		}
 
@@ -64,12 +99,21 @@ public class PetOwner {
 					+ "]";
 		}
 
-		public int getNumOfPets() {
+		public static int getNumOfPets() {
 			return numOfPets;
 		}
 
 		public void setNumOfPets(int numOfPets) {
 			this.numOfPets = numOfPets;
+		}
+		
+		public void listAdoptedPets() {
+			System.out.println(firstname + "'s pets:");
+			for(Pet pet : pets) {
+				if(pet != null) {
+					System.out.println(pet);
+				}
+			}
 		}
 		
 		
