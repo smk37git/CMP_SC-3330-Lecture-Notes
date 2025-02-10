@@ -116,7 +116,11 @@ public class PetOwner {
 			}
 		}
 		
-		
-		
+		public Pet getPetAt(int index) {
+			if(pets[index] != null) {
+				return new Pet(pets[index]) ;
+			}
+			return null;
+		}
 		
 }

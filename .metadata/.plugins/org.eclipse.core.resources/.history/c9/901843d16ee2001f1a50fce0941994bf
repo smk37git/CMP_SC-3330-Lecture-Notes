@@ -1,7 +1,0 @@
-package edu.mu.fitnessapp.user;
-
-public class SystemAdministratorUser {
-
-	public String name;
-	public String lastname;
-}
