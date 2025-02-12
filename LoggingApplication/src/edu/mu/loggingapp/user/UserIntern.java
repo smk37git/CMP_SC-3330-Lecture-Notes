@@ -1,5 +1,27 @@
 package edu.mu.loggingapp.user;
 
-public class UserIntern {
+import edu.mu.loggingapp.logger.LoggerSingleton;
 
+public class UserIntern {
+	private static int IDCounter = 1;
+	private int internID;
+	
+	public UserIntern() {
+		this.internID = IDCounter;
+		IDCounter++;
+	}
+
+	public int getInternID() {
+		return internID;
+	}
+	
+	public void addAction() {
+		String msg = "Intern #" + internID + " added something.";
+		LoggerSingleton.getInstance().logUser(msg);
+	}
+	
+	public void deleteAction() {
+		String msg = "Intern #" + internID + " deleted something.";
+		LoggerSingleton.getInstance().logUser(msg);
+	}
 }

@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.mu.fitnessapp.user.SystemAdministratorUser"/>
     <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
     <fullyQualifiedTypeName name="java.io.FileWriter"/>
+    <fullyQualifiedTypeName name="edu.mu.loggingapp.logger.LoggerSingleton"/>
+    <fullyQualifiedTypeName name="edu.mu.loggingapp.user.UserDeveloper"/>
+    <fullyQualifiedTypeName name="edu.mu.loggingapp.user.UserIntern"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
 </qualifiedTypeNameHistroy>
