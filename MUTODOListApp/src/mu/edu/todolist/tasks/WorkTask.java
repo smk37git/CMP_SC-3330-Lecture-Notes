@@ -15,8 +15,14 @@ public class WorkTask extends Task{
 	
 	@Override
 	public void displayTask() {
-		super.displayTask();System.out.println("Deadline: " );
+		super.displayTask();System.out.println();
+		
+		System.out.println("Deadline: " + deadline);
+		System.out.println("Priority: " + priority);
 	}
 	
-	
+	public void extendDeadlineInDays(int days) {
+		deadline = deadline.plusDays(days);
+		System.out.print("You're task is extended, here is your new deadline: " + deadline);
+	}
 }

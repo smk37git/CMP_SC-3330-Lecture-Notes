@@ -5,6 +5,31 @@ public class Task {
 	private String description;
 	private boolean isCompleted;
 	
+	
+	/**
+	 * Default Constructor
+	 */
+	public Task() {
+		System.out.println("Task Object Created");
+	}
+	
+	/**
+	 * Parameterized Constructor
+	 * @param title
+	 * @param description
+	 */
+	public Task(String title, String description) {
+		super();
+		this.title = title;
+		this.description = description;
+		this.isCompleted = false;
+		
+	}
+	
+	protected void printStatus() {
+		System.out.println("This is just printing the status from class Task");
+	}
+	
 	public void markCompleted() {
 		this.isCompleted = true;
 	}
@@ -14,16 +39,10 @@ public class Task {
 	}
 	
 	public void displayTask() {
-		System.out.println("Title: " + this.title + ", Description: " + description);
+		System.out.println("\nTitle: " + this.title + ", Description: " + description);
 	}
 	
-	public Task(String title, String description) {
-		super();
-		this.title = title;
-		this.description = description;
-		this.isCompleted = false;
-		
-	}
+	
 	public String getTitle() {
 		return title;
 	}
