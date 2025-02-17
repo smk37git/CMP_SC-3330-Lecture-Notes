@@ -8,4 +8,5 @@
     <fullyQualifiedTypeName name="edu.mu.loggingapp.user.UserIntern"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
+    <fullyQualifiedTypeName name="smarthome.devices.status.DeviceState"/>
 </qualifiedTypeNameHistroy>

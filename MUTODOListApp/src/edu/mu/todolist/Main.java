@@ -21,9 +21,12 @@ public class Main {
 		for(int i=0; i<myTasks.length; i++) {
 			if(myTasks[i] != null) {
 				myTasks[i].displayTask();
-				if(myTasks[i].getClass().getSimpleName().equals("WorkTask")) {
+				
+				//if(myTasks[i].getClass().getSimpleName().equals("WorkTask")) {
+				if(myTasks[i] instanceof WorkTask) {
 					System.out.println("Found a Work Task");
 					((WorkTask)myTasks[i]).extendDeadlineInDays(5);
+					
 				}
 				System.out.println();
 			}
