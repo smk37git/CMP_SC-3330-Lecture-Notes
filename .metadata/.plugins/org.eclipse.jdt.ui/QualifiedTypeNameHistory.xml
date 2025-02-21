@@ -6,7 +6,8 @@
     <fullyQualifiedTypeName name="edu.mu.loggingapp.logger.LoggerSingleton"/>
     <fullyQualifiedTypeName name="edu.mu.loggingapp.user.UserDeveloper"/>
     <fullyQualifiedTypeName name="edu.mu.loggingapp.user.UserIntern"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="smarthome.devices.status.DeviceState"/>
+    <fullyQualifiedTypeName name="smarthome.devices.SmartTV"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>
