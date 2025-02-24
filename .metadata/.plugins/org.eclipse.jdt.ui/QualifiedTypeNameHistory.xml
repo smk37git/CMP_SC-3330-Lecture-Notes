@@ -10,4 +10,5 @@
     <fullyQualifiedTypeName name="smarthome.devices.status.DeviceState"/>
     <fullyQualifiedTypeName name="smarthome.devices.SmartTV"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="edu.mu.shopping.payment.CreditCardPayment"/>
 </qualifiedTypeNameHistroy>
