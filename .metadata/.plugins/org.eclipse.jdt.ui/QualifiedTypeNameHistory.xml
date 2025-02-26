@@ -11,4 +11,5 @@
     <fullyQualifiedTypeName name="smarthome.devices.SmartTV"/>
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.mu.shopping.payment.CreditCardPayment"/>
+    <fullyQualifiedTypeName name="edu.mu.dragonslayer.characters.DragonType"/>
 </qualifiedTypeNameHistroy>
