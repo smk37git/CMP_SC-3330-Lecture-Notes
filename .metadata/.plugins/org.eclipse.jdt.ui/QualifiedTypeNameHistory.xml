@@ -12,4 +12,6 @@
     <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.mu.shopping.payment.CreditCardPayment"/>
     <fullyQualifiedTypeName name="edu.mu.dragonslayer.characters.DragonType"/>
+    <fullyQualifiedTypeName name="factory.simple.shapefactory.ShapeFactory"/>
+    <fullyQualifiedTypeName name="factory.method.shapefactory.ShapeFactory"/>
 </qualifiedTypeNameHistroy>
