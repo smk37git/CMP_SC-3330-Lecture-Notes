@@ -14,4 +14,6 @@
     <fullyQualifiedTypeName name="edu.mu.dragonslayer.characters.DragonType"/>
     <fullyQualifiedTypeName name="factory.simple.shapefactory.ShapeFactory"/>
     <fullyQualifiedTypeName name="factory.method.shapefactory.ShapeFactory"/>
+    <fullyQualifiedTypeName name="factory.abstractdp.lotrweapons.weaponfactory.WeaponFactory"/>
+    <fullyQualifiedTypeName name="java.util.Collections"/>
 </qualifiedTypeNameHistroy>
