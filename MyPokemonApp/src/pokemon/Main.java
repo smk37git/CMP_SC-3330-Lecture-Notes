@@ -2,9 +2,11 @@ package pokemon;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Scanner;
 
 import pokemon.monster.Pokemon;
 import pokemon.monster.PokemonTypes;
+import pokemon.trainer.PokemonNotExistException;
 import pokemon.trainer.PokemonTrainer;
 import pokemon.comparators.PokemonHealthPointComparator;
 import pokemon.comparators.PokemonTypeComparator;
@@ -22,11 +24,27 @@ public class Main {
 		
 		//ash.getPokemonList().sort(null);
 		Collections.sort(ash.getPokemonList(), new PokemonTypeComparator());
+		//Collections.sort(ash.getPokemonList(), (p1, p2) -> Double);
 		Collections.sort(ash.getPokemonList());
 		for(Pokemon p : ash.getPokemonList()) {
 			System.out.println(p);
 		}
-		//System.out.println(ash.getPokemonList());
+		boolean flag = false;
+		while(!flag) {
+			}
+			try {
+				Scanner input = new Scanner(System.in);
+				String pokemonName = input.next();
+				Pokemon pikachu = ash.getPokemon(new Pokemon(pokemonName, PokemonTypes.ELECTRIC, 50, 20.0));
+				flag = true;
+				System.out.println("Attack " + pikachu.getName() + "!");
+			} catch (PokemonNotExistException e) {
+				e.printStackTrace();
+				System.out.println("I see that you don't have " + e.getOffendingPokemon().getName());
+				System.out.println("Try a different pokemon!");
+			}
+		}
+		System.out.println("Is pikachu here: " + ash.getPokemonList().contains(new Pokemon("Pikachu", PokemonTypes.ELECTRIC, 50, 20.0)));
 		
 		
 		

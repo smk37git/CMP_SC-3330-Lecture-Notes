@@ -9,11 +9,12 @@
     <fullyQualifiedTypeName name="java.time.LocalDateTime"/>
     <fullyQualifiedTypeName name="smarthome.devices.status.DeviceState"/>
     <fullyQualifiedTypeName name="smarthome.devices.SmartTV"/>
-    <fullyQualifiedTypeName name="java.lang.System"/>
     <fullyQualifiedTypeName name="edu.mu.shopping.payment.CreditCardPayment"/>
     <fullyQualifiedTypeName name="edu.mu.dragonslayer.characters.DragonType"/>
     <fullyQualifiedTypeName name="factory.simple.shapefactory.ShapeFactory"/>
     <fullyQualifiedTypeName name="factory.method.shapefactory.ShapeFactory"/>
     <fullyQualifiedTypeName name="factory.abstractdp.lotrweapons.weaponfactory.WeaponFactory"/>
     <fullyQualifiedTypeName name="java.util.Collections"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

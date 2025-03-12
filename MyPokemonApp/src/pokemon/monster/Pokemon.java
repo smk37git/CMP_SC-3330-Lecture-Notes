@@ -60,4 +60,10 @@ public class Pokemon implements Comparable<Pokemon>{
 		//return Integer.compare(o.getHP().intValue(), this.HP.intValue());
 	}
 	
+	@Override
+	public boolean equals(Object obj) {
+		Pokemon p = (Pokemon)obj;
+		return this.getName().equals(p.getName());
+	}
+	
 }
