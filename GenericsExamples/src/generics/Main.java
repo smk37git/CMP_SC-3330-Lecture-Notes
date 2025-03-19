@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import generic.classes.MyCustomData;
 import generic.classes.PairData;
+import generics.boundedtypes.GenericsBoundedTypes;
 import generics.method.Dwayne;
 import generics.method.Rocks;
 
@@ -24,8 +25,21 @@ public class Main {
 		
 		Rocks rocks = new Rocks();
 		rocks.printSomething(new Dwayne());
-		
 		rocks.printSomething(pair);
+		
+		Number num = 12;
+		Integer intType = 3;
+		Double doubleType = 1.2;
+		Float floatType = (float) 0.2;
+		GenericsBoundedTypes<Integer> numObj = new GenericsBoundedTypes<Integer>();
+		//numObj.getList().add(num);
+		numObj.getList().add(intType);
+		//numObj.getList().add(doubleType);
+		//numObj.getList().add(floatType);
+		
+		numObj.printListValues();
+		System.out.println("Sum: " + numObj.sumAllNumbers());
+		
 		
 	}
 
